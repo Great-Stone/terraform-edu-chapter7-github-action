@@ -1,4 +1,4 @@
-name: Terraform DEV Destory
+ame: Terraform DEV Destory
 env:
   MY_PREFIX: dev
   TF_VERSION: 1.2.5
