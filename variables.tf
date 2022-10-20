@@ -44,6 +44,6 @@ variable "environment" {
   description = "Define infrastructure's enviroment"
   validation {
     condition = contains(["dev","qa","prod"],var.environment)
-    error_message = "dev, qa, prod !!"
+    error_message = "dev, qa, prod !!!!!!"
   }
 }
