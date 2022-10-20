@@ -1,10 +1,10 @@
 terraform {
   cloud {
-    organization = "<MY-ORG>"
-    hostname     = "app.terraform.io" # default
+    hostname     = "app.terraform.io"
+    organization = "LG-uplus"
 
     workspaces {
-      name = "terraform-edu-chapter7-github-action"
+      name = "terraform-aws-edu-jay"
     }
   }
   required_providers {
