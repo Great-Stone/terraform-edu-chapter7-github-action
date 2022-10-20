@@ -40,7 +40,7 @@ variable "placeholder" {
 
 
 variable "environment" {
-  type = "string"
+  type = string
   default = "dev"
   description = "Define infrastructure's enviroment"
   validation {
