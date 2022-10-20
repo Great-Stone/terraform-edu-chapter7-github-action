@@ -38,12 +38,14 @@ variable "placeholder" {
 }
 
 
-variable "environment"{
+
+variable "environment" {
   type = string
   default = "dev"
-  description = "define infrastructure's environment"
+  description = "Define infrastructure's enviroment"
   validation {
-    condition = contains(["dev","qa","prod"] , var.environment)
-    error_message = "dev or qa or prod"
+    condition = contains(["dev","qa","prod"],var.environment)
+    error_message = "dev, qa, prod !!!!!!"
   }
 }
+
