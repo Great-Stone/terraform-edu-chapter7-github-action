@@ -1,12 +1,4 @@
 terraform {
-  cloud {
-    hostname     = "app.terraform.io"
-    organization = "LG-uplus"
-
-    workspaces {
-      name = "terraform-aws-edu-jay"
-    }
-  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
