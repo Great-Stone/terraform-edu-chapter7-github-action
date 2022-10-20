@@ -1,6 +1,6 @@
 terraform {
   cloud {
-    organization = "<MY-ORG>"
+    organization = "IAC1020"
     hostname     = "app.terraform.io" # default
 
     workspaces {
@@ -98,6 +98,11 @@ resource "aws_route_table" "hashicat" {
     cidr_block = "0.0.0.0/0"
     gateway_id = aws_internet_gateway.hashicat.id
   }
+  tags = {
+    name        = "${var.prefix}-vpc-${var.region}"
+    environment = var.environment
+  }
+
 }
 
 resource "aws_route_table_association" "hashicat" {
