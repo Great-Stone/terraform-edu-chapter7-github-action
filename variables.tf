@@ -42,7 +42,7 @@ variable "environment" {
   default     = "dev"
   description = "Define Infrastructure's environment"
   validation {
-    condition     = contains(["dev", "qa", "prod"] var.environment)
+    condition     = contains(["dev", "qa", "prod"], var.environment)
     error_message = "The environment value must be dev, qa or prod"
   }
 }
