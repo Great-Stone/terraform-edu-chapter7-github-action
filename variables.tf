@@ -38,6 +38,7 @@ variable "placeholder" {
 }
 
 
+
 variable "environment" {
   type = "string"
   default = "dev"
@@ -47,3 +48,4 @@ variable "environment" {
     error_message = "dev, qa, prod !!!!!!"
   }
 }
+
